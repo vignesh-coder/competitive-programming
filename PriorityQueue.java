@@ -1,6 +1,6 @@
 class PriorityQueue<T extends Comparable<T>>{
     
-    private final int MAX = (int) 1e5+5;
+    private final int MAX = (int) 1e6+5;
     private Object items[] = new Object[MAX];
     private int len = 0;
     
