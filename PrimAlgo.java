@@ -1,6 +1,7 @@
 /*
 Note : Prim's Minimum Spanning tree algorithm uses 'PriorityQueue' which is also available in this repo.
 */
+import java.util.*;
 class PrimAlgo{
     
     static class Pair<T extends Comparable<T>,E> implements Comparable<Pair<T,E>>{
@@ -49,12 +50,7 @@ class PrimAlgo{
     }
     
     public static void main(String...args){
-        
-        
-        Integer ii = 5;
-        Integer j = 6;
-        System.out.println(ii.compareTo(j));
-        
+     
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int m = in.nextInt();
@@ -74,3 +70,18 @@ class PrimAlgo{
         System.out.println(minCost);
     }   
 }
+
+/*
+
+Sample Input :
+4 5
+1 2 7
+1 4 6
+4 2 9
+4 3 8
+2 3 6
+
+Sample Output:
+19
+
+*/
