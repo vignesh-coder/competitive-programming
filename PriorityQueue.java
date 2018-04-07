@@ -18,19 +18,19 @@ class PriorityQueue<T extends Comparable<T>>{
         
         int left = i*2;
         int right = i*2 + 1;
-        int largest = i;
+        int high = i;
         
-        if(left<=len && item(left).compareTo(item(largest)) > 0){
-            largest = left;
+        if(left<=len && item(left).compareTo(item(high)) > 0){
+            high = left;
         }
-        if(right<=len && item(right).compareTo(item(largest)) > 0){
-            largest = right;
+        if(right<=len && item(right).compareTo(item(high)) > 0){
+            high = right;
         }
         
-        if(largest != i){
+        if(high != i){
             
-            swap(largest,i);
-            heapify(largest);
+            swap(high,i);
+            heapify(high);
         }
     }
     
